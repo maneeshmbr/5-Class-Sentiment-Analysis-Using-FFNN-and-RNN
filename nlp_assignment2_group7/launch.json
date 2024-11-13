@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run FFNN",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ffnn.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-hd", "50",
+                "-e", "10",
+                "--train_data", "training.json",
+                "--val_data", "validation.json",
+                "--do_train"
+            ]
+        },
+        {
+            "name": "Run RNN",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/rnn.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-hd", "50",
+                "-e", "10",
+                "--train_data", "training.json",
+                "--val_data", "validation.json",
+                "--do_train"
+            ]
+        }
+    ]
+}
